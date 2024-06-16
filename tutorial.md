@@ -174,9 +174,10 @@ Save the file.  Now when you run `ceptre` on `hello.cep`, you will be given
 a prompt:
 
 ```
-0: rule
+0: (quiesce)
 1: rule
 2: rule
+3: rule
 ?- 
 ```
 
@@ -191,21 +192,21 @@ corresponding to *which* of the three `a`s is to be replaced.
 When the stage isn't marked as interactive, the engine will choose randomly
 between all available transitions.
 
-Type a number corresponding to one of these choices, for instance 0. Now
+Type a number corresponding to one of these choices, for instance 1. Now
 you should see
 
 ```
-0: rule
+0: (quiesce)
 1: rule
 2: rule
-?- 0
+?- 1
 
-0: rule
+0: (quiesce)
 1: rule
-?-
+?- 1
 ```
 
-Select 0 twice more to see a similar output to the original program:
+Select 1 twice more to see a similar output to the original program:
 
 ```
 Final state:
